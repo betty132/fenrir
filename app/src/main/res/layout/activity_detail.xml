@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ImageButton
+        android:id="@+id/backSearch"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="再検索する"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-10dp"/>
+
+    <TextView
+        android:id="@+id/storeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="掲載店名"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/storePhoto"
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/catchPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="キャッチフレーズ"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="営業時間"
+                android:textSize="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="営業時間"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="住所"
+                android:textSize="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="住所"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="アクセス"
+                android:textSize="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="アクセス"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/like"
+                android:text="お気に入り登録"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/orange2"
+                app:cornerRadius="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dislike"
+                android:text="お気に入り解除"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
